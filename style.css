@@ -1,0 +1,27 @@
+.cards {
+    margin: -1rem;
+}
+
+.card {
+    width: 220px;
+    float: left;
+    margin: 1rem;
+    border: 1px solid #d3d3d3;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+@supports (display: grid) {
+    .cards {
+        margin: 0;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 1rem;
+    }
+
+
+}
